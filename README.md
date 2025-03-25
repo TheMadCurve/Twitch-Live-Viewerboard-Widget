@@ -15,32 +15,21 @@ You'll need a Twitch Client ID, OAuth Token, and Channel ID.
   - Create an application and get a Client ID.
   - Generate an OAuth token using:
      - Twitch Token Generator
-
-Find Your Channel ID
-
-Replace YOUR_CHANNEL_NAME in this link and open it in a browser:
-
-arduino
-Copy
-Edit
+2. Find Your Channel ID
+  - Replace YOUR_CHANNEL_NAME in this link and open it in a browser:
+```
 https://api.twitch.tv/helix/users?login=YOUR_CHANNEL_NAME
-Look for "id": "123456789" in the response. That’s your Channel ID.
-
-Update config.js (or the JavaScript file)
-
-Open the file and replace:
-
-js
-Copy
-Edit
+```
+  - Look for "id": "123456789" in the response. That’s your Channel ID.
+3. Update config.js (or the JavaScript file)
+  - Open the file and replace:
+```
 const CLIENT_ID = "YOUR_CLIENT_ID";
 const CHANNEL_ID = "YOUR_CHANNEL_ID";
 const AUTH_TOKEN = "YOUR_OAUTH_TOKEN";
-Step 3: Add the Widget to OBS
-Open OBS Studio.
-
-Click the + button under Sources and select Browser Source.
-
-Enter the local file path (file:///C:/path-to-widget/index.html) or host it online.
-
-Adjust the width and height, then click OK.
+```
+**Step 3: Add the Widget to OBS**
+1. Open OBS Studio.
+2. Click the ```+``` button under Sources and select Browser Source.
+3. Enter the local file path (```file:///C:/path-to-widget/index.html```) or host it online.
+4. Adjust the width and height, then click OK.
